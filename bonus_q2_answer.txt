@@ -1,0 +1,14 @@
+Answer for bonus question 2:
+
+The search term "lung cancer" searhing for accession id's matching the search text
+There is a match with the id "SAMEA1481290" cancer type:[{'text': u'non-small-cell lung cancer (NSCLC)'}] , hence this accession id has been pulled up for the given search term "lung cancer"
+
+Please try the below URL's to retrive the record:
+
+https://www.ebi.ac.uk/biosamples/samples?text=lung+cancer&filter=acc:SAMEA1481290       -->  will give the record, because text=lung+cancer
+
+https://www.ebi.ac.uk/biosamples/samples?text=cancer&filter=acc:SAMEA1481290            -->  will give the record, because text=cancer
+
+https://www.ebi.ac.uk/biosamples/samples?text=diabetes&filter=acc:SAMEA1481290          -->  will not give the record, because text=diabetes
+
+
