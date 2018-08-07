@@ -1,0 +1,99 @@
+Retrieving total number of samples available:
+Example:
+
+Command to run : python ebi_test.py --total_count
+URL : https://www.ebi.ac.uk/biosamples/samples
+Total count of samples : 5796390
+
+Retrieving sample name from the given accession:
+Examples:
+
+Command to run : python ebi_test.py --acc  SAMD00000328
+URL : https://www.ebi.ac.uk/biosamples/samples?filter=acc:SAMD00000328
+Sample name is: MTB313
+
+Command to run : python ebi_test.py --acc  SAMEA3328641
+URL : https://www.ebi.ac.uk/biosamples/samples?filter=acc:SAMEA3328641
+SAMPLE 25 Sample name: 8795207029_R01C01
+
+Command to run : python ebi_test.py --acc  SAMEA3350293
+URL : https://www.ebi.ac.uk/biosamples/samples?filter=acc:SAMEA3350293
+Sample name: 33 breast sample
+
+Command to run : python ebi_test.py --acc SAMEA3350315
+URL : https://www.ebi.ac.uk/biosamples/samples?filter=acc:SAMEA3350315
+Sample name: 87 breast sample
+
+Command to run : python ebi_test.py --acc  SAMEA3350376
+URL : https://www.ebi.ac.uk/biosamples/samples?filter=acc:SAMEA3350376
+Sample name: 52 breast sample
+
+Retrieving accession from the given filter:
+Examples:
+
+Command to run : python ebi_test.py --attr organism:Streptococcus
+URL : https://www.ebi.ac.uk/biosamples/samples?text=&filter=attr:organism:Streptococcus&size=5795298
+Accession	Attribute:Value pairs
+SAMD00009934	organism:Streptococcus
+SAMD00009935	organism:Streptococcus
+SAMD00009936	organism:Streptococcus
+SAMD00009937	organism:Streptococcus
+SAMD00009938	organism:Streptococcus
+SAMD00009939	organism:Streptococcus
+SAMD00009940	organism:Streptococcus
+SAMD00009941	organism:Streptococcus
+SAMN00004705	organism:Streptococcus
+SAMN03177515	organism:Streptococcus
+SAMN03265611	organism:Streptococcus
+SAMN03265612	organism:Streptococcus
+SAMN03265613	organism:Streptococcus
+SAMN03265614	organism:Streptococcus
+SAMN03265615	organism:Streptococcus
+SAMN03265616	organism:Streptococcus
+SAMN03265617	organism:Streptococcus
+SAMN03265618	organism:Streptococcus
+SAMN03265619	organism:Streptococcus
+SAMN03265620	organism:Streptococcus
+SAMN03265621	organism:Streptococcus
+SAMN03265622	organism:Streptococcus
+SAMN05208883	organism:Streptococcus
+SAMN05271430	organism:Streptococcus
+SAMN07276855	organism:Streptococcus
+SAMN08990903	organism:Streptococcus
+SAMN08990904	organism:Streptococcus
+
+Command to run : python ebi_test.py --attr organism:Streptococcus+pyogenes strain:MTB313
+URL : https://www.ebi.ac.uk/biosamples/samples?text=&filter=attr:organism:Streptococcus+pyogenes&filter=attr:strain:MTB313&size=5795298
+Accession	Attribute:Value pairs
+SAMD00000328	organism:Streptococcus+pyogenes, strain:MTB313
+
+Command to run : python ebi_test.py --attr organism:Streptococcus+pyogenes source+name:Whole+bacterial+cell
+URL : https://www.ebi.ac.uk/biosamples/samples?text=&filter=attr:organism:Streptococcus+pyogenes&filter=attr:source+name:Whole+bacterial+cell&size=5795298
+Accession	Attribute:Value pairs
+SAMN04309129	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+SAMN04309130	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+SAMN04309131	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+SAMN04309132	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+SAMN04309133	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+SAMN04309134	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+SAMN04309135	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+SAMN04309136	organism:Streptococcus+pyogenes, source+name:Whole+bacterial+cell
+
+Command to run : python ebi_test.py --attr organism:Streptococcus+pyogenes growth+phase:16+hr+biofilm
+URL : https://www.ebi.ac.uk/biosamples/samples?text=&filter=attr:organism:Streptococcus+pyogenes&filter=attr:growth+phase:16+hr+biofilm&size=5795298
+Accession	Attribute:Value pairs
+SAMN04901568	organism:Streptococcus+pyogenes, growth+phase:16+hr+biofilm
+SAMN04901569	organism:Streptococcus+pyogenes, growth+phase:16+hr+biofilm
+SAMN04901570	organism:Streptococcus+pyogenes, growth+phase:16+hr+biofilm
+
+Command to run : python ebi_test.py --attr organism:Streptococcus+pyogenes growth+medium:Todd+Hewitt+Broth
+URL : https://www.ebi.ac.uk/biosamples/samples?text=&filter=attr:organism:Streptococcus+pyogenes&filter=attr:growth+medium:Todd+Hewitt+Broth&size=5795298
+Accession	Attribute:Value pairs
+SAMN04309129	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
+SAMN04309130	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
+SAMN04309131	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
+SAMN04309132	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
+SAMN04309133	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
+SAMN04309134	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
+SAMN04309135	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
+SAMN04309136	organism:Streptococcus+pyogenes, growth+medium:Todd+Hewitt+Broth
